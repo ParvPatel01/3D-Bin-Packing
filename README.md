@@ -1,31 +1,93 @@
+
 # 3D Bin Packing
-Made By: [Parv Patel](https://github.com/ParvPatel01).
 
-An interactive 3D bin packing web application built with React and Three.js. This tool demonstrates an efficient packing algorithm by arranging boxes inside a pallet in 3D space. Users can modify pallet size and box quantities, then visualize the optimal packing solution dynamically.
 
----
+A TypeScript implementation of the **3D Bin Packing** algorithm with a React-based visualizer built using Vite.  
+This project demonstrates how boxes can be efficiently arranged into a container (pallet) by using an algorithmic approach to minimize unused space.  
+The visualizer provides a 3D interactive representation to better understand the algorithm's results.
+
 
 ## Features
 
-- Custom 3D bin packing algorithm with layer-based packing and skyline heuristic
-- Supports multiple pallet orientations and selects best packing utilization
-- Dynamic UI for pallet dimensions and box quantities
-- Real-time 3D visualization with Three.js and TrackballControls
-- Responsive React interface with adjustable camera controls
-- Modular TypeScript codebase for easy customization and extension
+- **3D Bin Packing Algorithm** — Efficiently arranges boxes into a pallet using different orientations.
+- **Layer Candidate System** — Implements skyline-based placement logic.
+- **React + TypeScript + Vite** — Fast development and build process.
+- **Interactive Visualizer** — View and inspect the packing result in a 3D space.
+- **UI Controls** — Customize pallet and box dimensions, run the algorithm, and see results instantly.
 
----
 
-## Getting Started
 
-### Prerequisites
+## Project structure
 
-- Node.js (v14+ recommended)
-- npm or yarn
+```bash
+├── public
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── components
+│   │   ├── ControlPanel.tsx
+│   │    └── Visualizer.tsx
+│   ├── packing
+│   │    ├── layers.ts
+│   │    ├── packing.ts
+│   │    ├── type.ts
+│   │    └── utils.ts
+│   ├── visualizer
+│   │    ├── box.ts
+│   │    ├── camera.ts
+│   │    ├── controls.ts
+│   │    ├── pallet.ts
+│   │    ├── renderer.ts
+│   │    └── scene.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── reportWebVitals.ts
+├── node_modules
+├── README.md
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── .gitignore
+```
+## Installation
 
-### Installation
+Install my-project with npm
 
 ```bash
 git clone https://github.com/ParvPatel01/3D-Bin-Packing.git
 cd 3D-Bin-Packing
 npm install
+```
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/ParvPatel01/3D-Bin-Packing.git
+```
+
+Go to the project directory
+
+```bash
+  cd 3D-Bin-Packing
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Authors
+
+- [@Parv Patel](https://github.com/ParvPatel01)
+
