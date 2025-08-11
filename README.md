@@ -1,4 +1,4 @@
-![Banner](https://github.com/ParvPatel01/3D-Bin-Packing.git/banner.png)
+![Banner](banner.png)
 # 3D Bin Packing
 
 
